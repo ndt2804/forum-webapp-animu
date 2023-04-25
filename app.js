@@ -13,8 +13,7 @@ var indexRouter = require('./routes/index');
 var menuRouter = require('./routes/menu');
 var loginRouter = require('./routes/login');
 var roomRouter = require('./routes/room');
-
-
+const postRouter = require('./routes/post');
 
 var app = express();
 
@@ -41,6 +40,8 @@ app.use('/', indexRouter);
 app.use('/menu', menuRouter);
 app.use('/login', loginRouter);
 app.use('/room', roomRouter);
+app.use('/post', postRouter);
+
 
 
 

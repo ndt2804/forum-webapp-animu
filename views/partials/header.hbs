@@ -23,7 +23,7 @@
                         <div class="dropdown-content">
                             <ul>
                               {{#if loggedIn}}
-                                    <li><a href="#" onclick="showAddNewMenu();return false;">Add new menu</a></li>
+                                    <li><a href="#" onclick="showAddNewMenu();return false;">Add new post</a></li>
                                     <li><a href="/logout">Logout</a></li>
                                 {{else}}
                                     <li><a href="/login">Login</a></li>
@@ -38,11 +38,11 @@
             {{#if loggedIn}}
             <div class="login-box">
                 <div id="new-menu">
-                    <h2 class="page-title">New Menu</h2>
+                    <h2 class="page-title">New Post</h2>
                     <form action="/menu/new" method="POST">
-                        <div class="menu-name"><input type="text" name="menuName" placeholder="Name"></div>
-                        <div class="menu-icon-link"><input type="text" name="menuIcon" placeholder="Icon URL [http]"></div>
-                        <div class="menu-url"><input type="text" name="menuUrl" placeholder="Menu URL [http]"></div>
+                        <div class="menu-title"><input type="text" name="menuName" placeholder="Title"></div>
+                        <div class="menu-icon-link"><input type="text" name="menuIcon" placeholder="iamge"></div>
+                        <div class="menu-url"><input type="text" name="menuUrl" placeholder="description"></div>
                         <div class="menu-btn"><button type="submit" class="btn btn-primary">Save</button></div>
                     </form>
                 </div>
