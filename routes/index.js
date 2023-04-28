@@ -12,7 +12,6 @@ router.get('/', async(req, res) => {
   let menuResult = await menu.find({}).then( (menuData) => {
     res.render('index', {title:'Menu App', data: multiMongooseToObj(menuData), search:'', loggedIn:sesh.loggedIn});
   });
-
 });
 
 router.get('/logout', (req, res) => {

@@ -29,6 +29,7 @@ app.use(session({
     resave: false, // Không lưu lại session nếu không có sự thay đổi
     saveUninitialized: false // Không tạo mới session nếu không có sự thay đổi
   }));
+  
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(logger('dev'));
 app.use(express.json());
